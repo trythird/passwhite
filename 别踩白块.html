@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页版别踩白块小游戏</title>
+    <script type="text/javascript" src="jquery-1.12.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="别踩白块.css">
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+</head>
+<body>
+<div id="result-box" class="result-box">
+    <h1 >通关数前五</h1>
+    <hr/>
+    <subline></subline>
+    <div class="first" ></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <div class="fourth"></div>
+    <div class="fifth"></div>
+</div>
+</div>
+<div id="middle_body" class="middle_body">
+<header>
+<h1>别踩白块儿</h1>
+<div id="time_box"><span >0.000</span>秒</div>
+
+</header>
+<div id="grid-container">
+    <div class="grid" id="grid-0-0"></div>
+    <div class="grid" id="grid-0-1"></div>
+    <div class="grid" id="grid-0-2"></div>
+    <div class="grid" id="grid-1-0"></div>
+    <div class="grid" id="grid-1-1"></div>
+    <div class="grid" id="grid-1-2"></div>
+    <div class="grid" id="grid-2-0"></div>
+    <div class="grid" id="grid-2-1"></div>
+    <div class="grid" id="grid-2-2"></div>
+    <div class="grid" id="grid-3-0"></div>
+    <div class="grid" id="grid-3-1"></div>
+    <div class="grid" id="grid-3-2"></div>
+</div>
+</div>
+<div class="right-rule">
+    <h1>游戏规则</h1>
+<hr/>
+    <div class="rule">
+        根据中间模板下面方块的文字提示，敲击J或K或L开始游戏，J,K,L键位分别代表中间模块的最后一行方块的第一，二，三块方块。
+        敲打了第一次最后一行黑块成功，马上进行计时，此时不再提醒敲打的键位，
+        每敲击一次最后一行的黑块位置对应的键位成功则上面的方块序列集体向下移一列，
+        敲击相应位置的方块为黑色则成功得分进入下一关。由此规则重复进行。
+        当敲打了错位键位则游戏结束，此时显示出玩家通关数及游戏用时，如果重新游戏则点击restart按钮，重新进行游戏。
+    </div>
+</div>
+</body>
+</html>
